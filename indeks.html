@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD Bestie! ✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="https://down-de.vidssave.com/tmp/recycle/1m/content_site/download/bc/a5/a5050aafc3bb06f95c31a57c8f31bca5-4087965.webm?expire_ts=1770722626&sign=4bb653a33db6d878e66c77ef8e7c5b83&title=NCT_U_Make_A_Wish_Birthday_Song_MV_256KBPS.webm" type="audio/mpeg"> </audio>
+
+    <section class="hero">
+        <div class="floating-icons">✨ 🎈 🍰 🐾</div>
+        <h1 class="fade-in">It's Your Day!</h1>
+        <p class="subtitle">Scroll ke bawah untuk kejutan...</p>
+        <button id="playBtn" onclick="startEverything()">Mulai Musik 🎵</button>
+    </section>
+
+    <section class="gallery">
+        <h2>Our Best Moments</h2>
+        <div class="photo-grid">
+            <div class="photo-card"><img src="https://image2url.com/r2/default/images/1770633363539-1e132310-0c1d-4b8e-a5f9-5dcb62126251.jpeg" style="width:100%"> </div>
+            <div class="photo-card"> <img src="https://image2url.com/r2/default/images/1770633461968-7336f35d-eb0d-45f1-814e-a5eb3a51382c.jpeg" style="width:100%"> </div>
+            <div class="photo-card"><img src="https://image2url.com/r2/default/images/1770633506613-d36c0266-123a-47a9-bd63-47c397156718.jpeg" style="width:100%"></div>
+        </div>
+    </section>
+
+    <section class="letter-section">
+        <div class="envelope" onclick="openLetter()">
+            <div class="flap"></div>
+            <div class="letter">
+                <h3>Untuk Nadia Tersayang,</h3>
+                <p>
+                    Hari ini bukan sekadar hari biasa, tapi hari di mana dunia special karena mu. 
+                    Terima kasih sudah menjadi teman yang selalu ada, pendengar yang sabar, dan teman yang sangat luar biasa.
+                </p>
+                <p>
+                    Aku berharap di tahun ini, semua mimpi yang kamu selalu impikan akan menjadi kenyataan. 
+                    Tetaplah menjadi dirimu yang kocak, lucu, dan tetap jadi nadia yang aku kenal.
+                    DARI RAFE IMUT 
+                <p><strong>Selamat Ulang Tahun! 🎂✨</strong></p>
+            </div>
+            <div class="tap-hint">Klik Amplop untuk Baca</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Dibuat dengan ❤️ untukmu</p>
+    </footer>
+
+    <script>
+        function startEverything() {
+            const music = document.getElementById('bgMusic');
+            music.play();
+            document.getElementById('playBtn').style.display = 'none';
+        }
+
+        function openLetter() {
+            document.querySelector('.envelope').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
